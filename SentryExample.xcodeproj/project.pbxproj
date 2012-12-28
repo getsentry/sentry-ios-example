@@ -40,10 +40,6 @@
 		8B9EC7C2168E3BCC0095270F /* SentryExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SentryExampleViewController.h; sourceTree = "<group>"; };
 		8B9EC7C3168E3BCC0095270F /* SentryExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SentryExampleViewController.m; sourceTree = "<group>"; };
 		8B9EC7CB168E3BCC0095270F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		8B9EC7D3168E3BCC0095270F /* SentryExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SentryExampleTests-Info.plist"; sourceTree = "<group>"; };
-		8B9EC7D5168E3BCC0095270F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8B9EC7D7168E3BCC0095270F /* SentryExampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SentryExampleTests.h; sourceTree = "<group>"; };
-		8B9EC7D8168E3BCC0095270F /* SentryExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SentryExampleTests.m; sourceTree = "<group>"; };
 		8B9EC7FC168E453A0095270F /* RavenClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RavenClient.h; sourceTree = "<group>"; };
 		8B9EC7FD168E453A0095270F /* RavenClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RavenClient.m; sourceTree = "<group>"; };
 		8B9EC7FE168E453A0095270F /* RavenJSONUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RavenJSONUtilities.h; sourceTree = "<group>"; };
@@ -69,7 +65,6 @@
 			children = (
 				8B9EC7FB168E453A0095270F /* Raven */,
 				8B9EC7AD168E3BCC0095270F /* SentryExample */,
-				8B9EC7D1168E3BCC0095270F /* SentryExampleTests */,
 				8B9EC7A6168E3BCC0095270F /* Frameworks */,
 				8B9EC7A4168E3BCC0095270F /* Products */,
 			);
@@ -117,25 +112,6 @@
 				8B9EC7B9168E3BCC0095270F /* Default.png */,
 				8B9EC7BB168E3BCC0095270F /* Default@2x.png */,
 				8B9EC7BD168E3BCC0095270F /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8B9EC7D1168E3BCC0095270F /* SentryExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				8B9EC7D7168E3BCC0095270F /* SentryExampleTests.h */,
-				8B9EC7D8168E3BCC0095270F /* SentryExampleTests.m */,
-				8B9EC7D2168E3BCC0095270F /* Supporting Files */,
-			);
-			path = SentryExampleTests;
-			sourceTree = "<group>";
-		};
-		8B9EC7D2168E3BCC0095270F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8B9EC7D3168E3BCC0095270F /* SentryExampleTests-Info.plist */,
-				8B9EC7D4168E3BCC0095270F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -244,14 +220,6 @@
 				8B9EC7C0168E3BCC0095270F /* en */,
 			);
 			name = MainStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
-		8B9EC7D4168E3BCC0095270F /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8B9EC7D5168E3BCC0095270F /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
