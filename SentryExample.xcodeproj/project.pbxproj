@@ -18,7 +18,8 @@
 		8B9EC7BE168E3BCC0095270F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B9EC7BD168E3BCC0095270F /* Default-568h@2x.png */; };
 		8B9EC7C1168E3BCC0095270F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9EC7BF168E3BCC0095270F /* MainStoryboard.storyboard */; };
 		8B9EC7C4168E3BCC0095270F /* SentryExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9EC7C3168E3BCC0095270F /* SentryExampleViewController.m */; };
-		8B9EC7F5168E43130095270F /* Raven in Resources */ = {isa = PBXBuildFile; fileRef = 8B9EC7F4168E43130095270F /* Raven */; };
+		8B9EC800168E453A0095270F /* RavenClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9EC7FD168E453A0095270F /* RavenClient.m */; };
+		8B9EC801168E453A0095270F /* RavenJSONUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9EC7FF168E453A0095270F /* RavenJSONUtilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +44,10 @@
 		8B9EC7D5168E3BCC0095270F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8B9EC7D7168E3BCC0095270F /* SentryExampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SentryExampleTests.h; sourceTree = "<group>"; };
 		8B9EC7D8168E3BCC0095270F /* SentryExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SentryExampleTests.m; sourceTree = "<group>"; };
-		8B9EC7F4168E43130095270F /* Raven */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Raven; path = "raven-objc/Raven"; sourceTree = "<group>"; };
+		8B9EC7FC168E453A0095270F /* RavenClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RavenClient.h; sourceTree = "<group>"; };
+		8B9EC7FD168E453A0095270F /* RavenClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RavenClient.m; sourceTree = "<group>"; };
+		8B9EC7FE168E453A0095270F /* RavenJSONUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RavenJSONUtilities.h; sourceTree = "<group>"; };
+		8B9EC7FF168E453A0095270F /* RavenJSONUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RavenJSONUtilities.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +67,7 @@
 		8B9EC798168E3BCC0095270F = {
 			isa = PBXGroup;
 			children = (
-				8B9EC7F4168E43130095270F /* Raven */,
+				8B9EC7FB168E453A0095270F /* Raven */,
 				8B9EC7AD168E3BCC0095270F /* SentryExample */,
 				8B9EC7D1168E3BCC0095270F /* SentryExampleTests */,
 				8B9EC7A6168E3BCC0095270F /* Frameworks */,
@@ -136,6 +140,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8B9EC7FB168E453A0095270F /* Raven */ = {
+			isa = PBXGroup;
+			children = (
+				8B9EC7FC168E453A0095270F /* RavenClient.h */,
+				8B9EC7FD168E453A0095270F /* RavenClient.m */,
+				8B9EC7FE168E453A0095270F /* RavenJSONUtilities.h */,
+				8B9EC7FF168E453A0095270F /* RavenJSONUtilities.m */,
+			);
+			name = Raven;
+			path = "raven-objc/Raven";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -193,7 +209,6 @@
 				8B9EC7BC168E3BCC0095270F /* Default@2x.png in Resources */,
 				8B9EC7BE168E3BCC0095270F /* Default-568h@2x.png in Resources */,
 				8B9EC7C1168E3BCC0095270F /* MainStoryboard.storyboard in Resources */,
-				8B9EC7F5168E43130095270F /* Raven in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +222,8 @@
 				8B9EC7B4168E3BCC0095270F /* main.m in Sources */,
 				8B9EC7B8168E3BCC0095270F /* SentryExampleAppDelegate.m in Sources */,
 				8B9EC7C4168E3BCC0095270F /* SentryExampleViewController.m in Sources */,
+				8B9EC800168E453A0095270F /* RavenClient.m in Sources */,
+				8B9EC801168E453A0095270F /* RavenJSONUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

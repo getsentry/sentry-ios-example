@@ -7,7 +7,7 @@
 //
 
 #import "SentryExampleViewController.h"
-#import <RavenClient.h>
+#import "RavenClient.h"
 
 @interface SentryExampleViewController ()
 
@@ -36,7 +36,7 @@
 }
 
 - (IBAction)causeException:(id)sender {
-    @throw [NSException createException()];
+    @throw [NSException self.createException];
 }
 
 - (IBAction)callCaptureException:(id)sender {

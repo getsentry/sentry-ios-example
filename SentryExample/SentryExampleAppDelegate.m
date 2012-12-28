@@ -7,7 +7,7 @@
 //
 
 #import "SentryExampleAppDelegate.h"
-#import <RavenClient.h>
+#import "RavenClient.h"
 
 @implementation SentryExampleAppDelegate
 
