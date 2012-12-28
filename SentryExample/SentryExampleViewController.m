@@ -36,11 +36,11 @@
 }
 
 - (IBAction)causeException:(id)sender {
-    @throw [NSException self.createException];
+    @throw [self createException];
 }
 
 - (IBAction)callCaptureException:(id)sender {
-    NSException *exception = self.createException();
+    NSException *exception = [self createException];
     [[RavenClient sharedClient] captureException:exception];
 }
 
