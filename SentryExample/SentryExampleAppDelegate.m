@@ -14,7 +14,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Configure default client
-    [RavenClient clientWithDSN:@"https://e83832d204ec411a8400449e11238296:4ef8fd65ab094a26903f0246a211bcec@app.getsentry.com/4393"];
+    [RavenClient clientWithDSN:@"https://e2b9d524355449c5b278fba2d71f5ba6:e7afec18a7d2470b8d3c88723bfdf0b2@app.getsentry.com/4394"];
     
     // Bind default exception handler
     [[RavenClient sharedClient] setupExceptionHandler];
