@@ -7,12 +7,18 @@
 //
 
 #import "SentryExampleAppDelegate.h"
+#import <RavenClient.h>
 
 @implementation SentryExampleAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    // Configure default client
+    [RavenClient clientWithDSN:@"http://2eedba2a92a144d2815b1a8f900f41fc:057335ee438644d7976810792e5b1925@localhost:8000/4"];
+    
+    // Bind default exception handler
+    [[RavenClient sharedClient] setupExceptionHandler];
+    
     return YES;
 }
 							

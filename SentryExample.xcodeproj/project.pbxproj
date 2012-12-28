@@ -18,22 +18,8 @@
 		8B9EC7BE168E3BCC0095270F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B9EC7BD168E3BCC0095270F /* Default-568h@2x.png */; };
 		8B9EC7C1168E3BCC0095270F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9EC7BF168E3BCC0095270F /* MainStoryboard.storyboard */; };
 		8B9EC7C4168E3BCC0095270F /* SentryExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9EC7C3168E3BCC0095270F /* SentryExampleViewController.m */; };
-		8B9EC7CC168E3BCC0095270F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9EC7CB168E3BCC0095270F /* SenTestingKit.framework */; };
-		8B9EC7CD168E3BCC0095270F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9EC7A7168E3BCC0095270F /* UIKit.framework */; };
-		8B9EC7CE168E3BCC0095270F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9EC7A9168E3BCC0095270F /* Foundation.framework */; };
-		8B9EC7D6168E3BCC0095270F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B9EC7D4168E3BCC0095270F /* InfoPlist.strings */; };
-		8B9EC7D9168E3BCC0095270F /* SentryExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9EC7D8168E3BCC0095270F /* SentryExampleTests.m */; };
+		8B9EC7F5168E43130095270F /* Raven in Resources */ = {isa = PBXBuildFile; fileRef = 8B9EC7F4168E43130095270F /* Raven */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		8B9EC7CF168E3BCC0095270F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8B9EC79A168E3BCC0095270F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8B9EC7A2168E3BCC0095270F;
-			remoteInfo = SentryExample;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8B9EC7A3168E3BCC0095270F /* SentryExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SentryExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,12 +38,12 @@
 		8B9EC7C0168E3BCC0095270F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		8B9EC7C2168E3BCC0095270F /* SentryExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SentryExampleViewController.h; sourceTree = "<group>"; };
 		8B9EC7C3168E3BCC0095270F /* SentryExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SentryExampleViewController.m; sourceTree = "<group>"; };
-		8B9EC7CA168E3BCC0095270F /* SentryExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SentryExampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9EC7CB168E3BCC0095270F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		8B9EC7D3168E3BCC0095270F /* SentryExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SentryExampleTests-Info.plist"; sourceTree = "<group>"; };
 		8B9EC7D5168E3BCC0095270F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8B9EC7D7168E3BCC0095270F /* SentryExampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SentryExampleTests.h; sourceTree = "<group>"; };
 		8B9EC7D8168E3BCC0095270F /* SentryExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SentryExampleTests.m; sourceTree = "<group>"; };
+		8B9EC7F4168E43130095270F /* Raven */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Raven; path = "raven-objc/Raven"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,22 +57,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B9EC7C6168E3BCC0095270F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8B9EC7CC168E3BCC0095270F /* SenTestingKit.framework in Frameworks */,
-				8B9EC7CD168E3BCC0095270F /* UIKit.framework in Frameworks */,
-				8B9EC7CE168E3BCC0095270F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		8B9EC798168E3BCC0095270F = {
 			isa = PBXGroup;
 			children = (
+				8B9EC7F4168E43130095270F /* Raven */,
 				8B9EC7AD168E3BCC0095270F /* SentryExample */,
 				8B9EC7D1168E3BCC0095270F /* SentryExampleTests */,
 				8B9EC7A6168E3BCC0095270F /* Frameworks */,
@@ -98,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				8B9EC7A3168E3BCC0095270F /* SentryExample.app */,
-				8B9EC7CA168E3BCC0095270F /* SentryExampleTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,25 +156,6 @@
 			productReference = 8B9EC7A3168E3BCC0095270F /* SentryExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8B9EC7C9168E3BCC0095270F /* SentryExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8B9EC7DF168E3BCC0095270F /* Build configuration list for PBXNativeTarget "SentryExampleTests" */;
-			buildPhases = (
-				8B9EC7C5168E3BCC0095270F /* Sources */,
-				8B9EC7C6168E3BCC0095270F /* Frameworks */,
-				8B9EC7C7168E3BCC0095270F /* Resources */,
-				8B9EC7C8168E3BCC0095270F /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8B9EC7D0168E3BCC0095270F /* PBXTargetDependency */,
-			);
-			name = SentryExampleTests;
-			productName = SentryExampleTests;
-			productReference = 8B9EC7CA168E3BCC0095270F /* SentryExampleTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -222,7 +179,6 @@
 			projectRoot = "";
 			targets = (
 				8B9EC7A2168E3BCC0095270F /* SentryExample */,
-				8B9EC7C9168E3BCC0095270F /* SentryExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -237,34 +193,11 @@
 				8B9EC7BC168E3BCC0095270F /* Default@2x.png in Resources */,
 				8B9EC7BE168E3BCC0095270F /* Default-568h@2x.png in Resources */,
 				8B9EC7C1168E3BCC0095270F /* MainStoryboard.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8B9EC7C7168E3BCC0095270F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8B9EC7D6168E3BCC0095270F /* InfoPlist.strings in Resources */,
+				8B9EC7F5168E43130095270F /* Raven in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		8B9EC7C8168E3BCC0095270F /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8B9EC79F168E3BCC0095270F /* Sources */ = {
@@ -277,23 +210,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B9EC7C5168E3BCC0095270F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8B9EC7D9168E3BCC0095270F /* SentryExampleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8B9EC7D0168E3BCC0095270F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8B9EC7A2168E3BCC0095270F /* SentryExample */;
-			targetProxy = 8B9EC7CF168E3BCC0095270F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8B9EC7B0168E3BCC0095270F /* InfoPlist.strings */ = {
@@ -347,6 +264,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -368,6 +286,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -376,10 +295,12 @@
 		8B9EC7DD168E3BCC0095270F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SentryExample/SentryExample-Prefix.pch";
 				INFOPLIST_FILE = "SentryExample/SentryExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -387,45 +308,13 @@
 		8B9EC7DE168E3BCC0095270F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SentryExample/SentryExample-Prefix.pch";
 				INFOPLIST_FILE = "SentryExample/SentryExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		8B9EC7E0168E3BCC0095270F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SentryExample.app/SentryExample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SentryExample/SentryExample-Prefix.pch";
-				INFOPLIST_FILE = "SentryExampleTests/SentryExampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		8B9EC7E1168E3BCC0095270F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SentryExample.app/SentryExample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SentryExample/SentryExample-Prefix.pch";
-				INFOPLIST_FILE = "SentryExampleTests/SentryExampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -448,14 +337,7 @@
 				8B9EC7DE168E3BCC0095270F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		8B9EC7DF168E3BCC0095270F /* Build configuration list for PBXNativeTarget "SentryExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8B9EC7E0168E3BCC0095270F /* Debug */,
-				8B9EC7E1168E3BCC0095270F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,23 +1,95 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C3104" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Sentry Example View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="SentryExampleViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vei-PE-EN8">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Uncaught Exception">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="causeException:" destination="2" eventType="touchUpInside" id="Gcg-7C-LXk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QT2-X1-LYD">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="captureException">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="callCaptureException:" destination="2" eventType="touchUpInside" id="GP9-e0-eme"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgB-Ij-qfk">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="captureMessage">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="callCaptureMessage:" destination="2" eventType="touchUpInside" id="ILo-Ob-MAK"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LkO-kH-lMv">
+                                <items>
+                                    <navigationItem title="Sentry Example" id="6O3-fL-FUi"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LkO-kH-lMv" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="3VM-S1-44y"/>
+                            <constraint firstItem="Vei-PE-EN8" firstAttribute="trailing" secondItem="QT2-X1-LYD" secondAttribute="trailing" type="default" id="8hb-fl-zSU"/>
+                            <constraint firstItem="LkO-kH-lMv" firstAttribute="centerX" secondItem="Vei-PE-EN8" secondAttribute="centerX" type="default" id="DdL-gI-baI"/>
+                            <constraint firstItem="Vei-PE-EN8" firstAttribute="top" secondItem="3" secondAttribute="top" constant="201" id="LUX-IH-R5h"/>
+                            <constraint firstItem="VgB-Ij-qfk" firstAttribute="top" secondItem="QT2-X1-LYD" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="OBS-m0-TwL"/>
+                            <constraint firstItem="LkO-kH-lMv" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="TOf-Ap-fnO"/>
+                            <constraint firstItem="QT2-X1-LYD" firstAttribute="top" secondItem="Vei-PE-EN8" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Ysc-rK-lRV"/>
+                            <constraint firstItem="Vei-PE-EN8" firstAttribute="leading" secondItem="QT2-X1-LYD" secondAttribute="leading" type="default" id="hcB-BM-aPs"/>
+                            <constraint firstItem="LkO-kH-lMv" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="hsQ-LC-KxQ"/>
+                            <constraint firstItem="VgB-Ij-qfk" firstAttribute="trailing" secondItem="QT2-X1-LYD" secondAttribute="trailing" type="default" id="rz4-6P-iHL"/>
+                            <constraint firstItem="QT2-X1-LYD" firstAttribute="leading" secondItem="VgB-Ij-qfk" secondAttribute="leading" type="default" id="xSX-4t-Rqe"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SentryExampleViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SentryExampleViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="callCaptureException:"/>
+                <relationship kind="action" name="callCaptureMessage:"/>
+                <relationship kind="action" name="causeException:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

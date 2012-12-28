@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface SentryExampleViewController : UIViewController
+- (IBAction)causeException:(id)sender;
+- (IBAction)callCaptureException:(id)sender;
+- (IBAction)callCaptureMessage:(id)sender;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "SentryExampleViewController.h"
+#import <RavenClient.h>
 
 @interface SentryExampleViewController ()
 
@@ -26,4 +27,25 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (NSException *)createException
+{
+    return [NSException
+            exceptionWithName:@"ExampleError"
+            reason:@"This is an example error"
+            userInfo:NULL];
+}
+
+- (IBAction)causeException:(id)sender {
+    @throw [NSException createException()];
+}
+
+- (IBAction)callCaptureException:(id)sender {
+    NSException *exception = self.createException();
+    [[RavenClient sharedClient] captureException:exception];
+}
+
+- (IBAction)callCaptureMessage:(id)sender {
+    NSString *message = @"This is an example message";
+    [[RavenClient sharedClient] captureMessage:message];
+}
 @end
