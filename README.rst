@@ -1,1 +1,1 @@
-This application is an example of using raven-objc in an iOS application.
+Deprecated use https://github.com/getsentry/sentry-cocoa
