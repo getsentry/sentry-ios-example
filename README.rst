@@ -1,1 +1,1 @@
-Deprecated use https://github.com/getsentry/sentry-cocoa
+Deprecated use https://github.com/getsentry/examples
